@@ -1,0 +1,251 @@
+:root {
+    --b3-theme-primary: rgba(255,156,0,1);
+    --b3-theme-primary-light: rgba(66, 133, 244, 0.54);
+    --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
+    --b3-theme-primary-lightest: rgba(66, 133, 244, 0.12);
+    --b3-theme-secondary: #f3a92f;
+    --b3-theme-background: #f8f9fa;
+    --b3-theme-surface: #f3f3f3;
+    --b3-theme-error: #d23f31;
+    --b3-theme-on-primary: #fff;
+    --b3-theme-on-secondary: #fff;
+    --b3-theme-on-background: #202124;
+    --b3-theme-on-surface: #5f6368;
+    --b3-theme-on-error: #fff;
+    --b3-font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-code: mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-border-color: rgba(0, 0, 0, .12);
+    --b3-scroll-color: rgba(0, 0, 0, .3);
+    --b3-list-hover: rgba(0, 0, 0, .06);
+    --b3-tab-background: #f8f9fa;
+    --b3-tab-background-hover: #e9eaeb;
+    --b3-tooltips-color: rgba(0, 0, 0, 0.54);
+    --b3-card-error-color: rgb(97, 26, 21);
+    --b3-card-error-background: rgb(253, 236, 234);
+    --b3-card-warning-color: rgb(102, 60, 0);
+    --b3-card-warning-background: rgb(255, 244, 229);
+    --b3-card-info-color: rgb(13, 60, 97);
+    --b3-card-info-background: rgb(232, 244, 253);
+    --b3-card-success-color: rgb(30, 70, 32);
+    --b3-card-success-background: rgb(237, 247, 237);
+    --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
+    --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    --b3-diff-add: #dfd;
+    --b3-diff-add-surface: #97f295;
+    --b3-diff-del: #fee8e9;
+    --b3-diff-del-surface: #ffb6ba;
+    --b3-graph-point: #202124;
+    --b3-graph-line: #5f6368;
+    --b3-graph-hl-point: #f3a92f;
+    --b3-graph-hl-line: #d23f31;
+    --b3-vditor-toolbar-height: 29px;
+    --b3-vditor-toolbar-height-space: 6px;
+    --b3-vditor-search-background: #ffe955;
+    --b3-vditor-search-border-color: #f2e680;
+    --b3-vditor-search-current-background: #a5d3fe;
+    --b3-vditor-code-background: rgba(27, 31, 35, .05);
+    --b3-vditor-mark-heading-color: #660e7a;
+    --b3-vditor-mark-title-color: #808080;
+    --b3-vditor-mark-em-color: #0033b3;
+    --b3-vditor-mark-strong-color: #0033b3;
+    --b3-vditor-mark-backslash-color: #0033b3;
+    --b3-vditor-mark-s-color: #5f6368;
+    --b3-vditor-mark-mark-color: #5f6368;
+    --b3-vditor-mark-link-color: #008000;
+    --b3-vditor-mark-bracket-color: #0000ff;
+    --b3-vditor-mark-paren-color: #008000;
+    --b3-vditor-mark-block-color: #660e7a;
+    --b3-vditor-mark-tag-color: #0033b3;
+    --b3-vditor-inline-strong-color: #202124;
+    --b3-vditor-inline-em-color: #202124;
+    --b3-vditor-inline-s-color: #202124;
+    --b3-vditor-inline-link-color: #4285f4;
+    --b3-vditor-inline-mark-background: #ffe955;
+    --b3-vditor-inline-mark-color: #202124;
+    --b3-vditor-inline-tag-color: #5f6368;
+    --b3-vditor-inline-blockref-color: #660e7a;
+    --MyOnly-table-thead-tr-background-color: -#c7c7c7;
+    --MyOnly-h1-color: -rgba(0,0,0,1);
+    --MyOnly-h2-color: -rgba(0,0,0,1);
+    --MyOnly-h3-color: -rgba(0,0,0,1);
+    --MyOnly-h4-color: -rgba(0,0,0,.9);
+    --MyOnly-h5-color: -rgba(0,0,0,.7);
+    --MyOnly-h6-color: -rgba(0,0,0,.5);
+    --MyOnly-code-line-number-color: -#000000;
+    --MyOnly-code-line-color: -#c7c7c7;
+    --MyOnly-tab-bar-theme-color: -rgba(255,156,0,1);
+    --MyOnly-setting-theme-color: -rgba(255,156,0,1)
+}
+.language-graphviz polygon {
+    fill: transparent
+}
+.b3-list--background .b3-list-item--focus {
+    background-color: var(--MyOnly-setting-theme-color) !important;
+    color: #000000
+}
+li.item.item--focus {
+    border: none;
+    background-color: var(--MyOnly-tab-bar-theme-color);
+    border-top: solid 2px transparent;
+    border-right: solid 2px transparent;
+}
+.layout-tab-bar .item {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-top: solid 2px var(--MyOnly-tab-bar-theme-color);
+    border-right: solid 2px var(--MyOnly-tab-bar-theme-color);
+    border-top-right-radius: 5px !important
+}
+.layout-tab-bar .item--focus {
+    border: none;
+    color: var(--MyOnly-code-line-number-color) !important
+}
+.file-tree .b3-list-item__graphic--arrow:not(.fn__hidden) {
+    opacity: 1
+}
+.vditor-reset .b3-list, .vditor-reset .b3-list ul {
+    padding-left: 0;
+    font-size: 14px;
+    border: 0;
+    margin-bottom: 0
+}
+ul > li.b3-list-item {
+    border-left: 0;
+    width: initial
+}
+.vditor-reset ul, .vditor-reset ol {
+    margin-left: 1em;
+    padding-left: 1em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-left: solid 1.5px rgba(0,0,0,.5)
+}
+ul > li:not(.task-list-item) {
+    border-left: none;
+    position: relative;
+    padding-left: 6px;
+    list-style-position: inside;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 8px;
+    padding-right: 6px;
+    transition: all 300ms ease-in-out
+}
+ul > li:not(.task-list-item) {
+    position: relative;
+    padding-left: 6px;
+    list-style-position: inside;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 8px;
+    padding-right: 6px;
+    transition: all 300ms ease-in-out
+}
+ul > li:not(.task-list-item):focus {
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(255, 165, 0, .3)
+}
+ul > li:not(.task-list-item):hover {
+    border: none;
+    box-shadow: none
+}
+ul > li:not(.task-list-item):active {
+    border: none;
+    box-shadow: none
+}
+.vditor-reset pre>code {
+    margin: 0;
+    max-height: unset !important;
+    font-size: 1em;
+    padding: 0.5em;
+    padding-bottom: 1.05em;
+    border-radius: 5px;
+    display: block;
+    overflow: auto;
+    white-space: pre;
+    font-family: var(--b3-font-family-code);
+    background-size: 20px 20px;
+    background-color: rgba(220,220,220,.5);
+    word-break: initial;
+    word-wrap: normal
+}
+code::before {
+    color: #ffffff !important;
+    opacity: 0.7;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    padding: 1px 0px;
+    padding-left: 90%
+}
+.vditor-linenumber__rows {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    width: 3em;
+    user-select: none;
+    counter-reset: linenumber
+}
+.vditor-linenumber__rows>span {
+    pointer-events: none;
+    display: block;
+    border-right: solid 1px var(--MyOnly-code-line-number-color);
+    opacity: .5
+}
+.vditor-linenumber__rows>span::before {
+    counter-increment: linenumber;
+    content: counter(linenumber);
+    color: var(--MyOnly-code-line-number-color);
+    opacity: 1;
+    display: block;
+    padding-right: 1em;
+    text-align: right
+}
+.vditor-reset h1 {
+    color: var(--MyOnly-h1-color);
+    border-bottom: 3px solid
+}
+.vditor-reset h2 {
+    color: var(--MyOnly-h2-color);
+    border-bottom: 2px solid
+}
+.vditor-reset h3 {
+    color: var(--MyOnly-h3-color);
+    border-bottom: 1px solid;
+    padding-bottom: 0.3em
+}
+.vditor-reset h4 {
+    color: var(--MyOnly-h4-color)
+}
+.vditor-reset h5 {
+    color: var(--MyOnly-h5-color)
+}
+.vditor-reset h6 {
+    color: var(--MyOnly-h6-color)
+}
+.vditor-reset table {
+    border-collapse: collapse;
+    width: 100%;
+    empty-cells: show;
+    margin-bottom: 16px;
+    overflow: auto;
+    border-spacing: 0
+}
+.vditor-reset table thead tr {
+    background-color: var(--MyOnly-code-line-color)
+}
+.vditor-reset table tbody tr:nth-child(2n+1) {
+    background-color: var(--b3-theme-background)
+}
+.vditor-reset table tbody tr td:first-child {
+
+}
+.layout-tab-bar .item:hover {
+    border: none;
+    background-color: var(--MyOnly-tab-bar-theme-color);
+    border-top: solid 2px transparent;
+    border-right: solid 2px transparent
+}
