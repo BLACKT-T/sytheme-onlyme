@@ -146,6 +146,14 @@
     background-color: var(--MyOnly-setting-theme-color) !important;
     color: #000000;
 }
+/* 设置面板侧边栏 */
+.b3-list-item.b3-list-item--big.b3-list-item--focus{
+    padding: 16px 36px;
+}
+.b3-list-item.b3-list-item--big{
+    padding: 8px;
+    padding-left: 24px;
+}
 /* 关闭按钮 */
 .b3-dialog__close {
     position: absolute;
@@ -180,6 +188,11 @@ li.item.item--focus{
     border-top: solid 2px transparent;
     border-right: solid 2px transparent;
 }
+.layout-tab-bar .item:hover:not(.item--focus){
+	background-color:var(--b3-tab-background-hover);
+	border-top: solid 2px var(--MyOnly-tab-bar-theme-color);
+	border-right: solid 2px var(--MyOnly-tab-bar-theme-color);
+}
 /* 非焦点页签 */
 .layout-tab-bar .item{
     border-radius: 10px 3px;
@@ -203,6 +216,11 @@ li.item.item--focus{
     z-index: 333;
 }
 /* 侧栏 */
+.b3-list.b3-list--background{
+	margin-left: 0;
+}
+
+
 .file-tree .b3-list-item__graphic--arrow:not(.fn__hidden){
     opacity: 1;
 }
@@ -220,8 +238,14 @@ li.item.item--focus{
 ul > li.b3-list-item {
     border-left: 0;
     /* width: initial; */
+    /*padding-left: 16px !important;*/
 }
-
+.b3-list-item.b3-list-item--hide-action{
+	/*padding-left: 46px !important;*/
+}
+.b3-list-item.b3-list-item--hide-action.b3-list-item--hide-tip{
+	/*padding-left: 16px !important;*/
+}
 /* 列表 */
 /* 无序列表 */
 .vditor-reset ol {
@@ -237,7 +261,7 @@ ul > li.b3-list-item {
 /* 有序列表 */
 .vditor-reset ul {
     margin-left: 1em;
-    padding-left: 1em;
+    padding-left: 2em;
     margin-top: 0;
     margin-bottom: 16px;
     border-left: solid 1.5px rgba(0,0,0,.5);
@@ -251,7 +275,7 @@ ul > li:not(.task-list-item) {
 ul > li:not(.task-list-item) {
     position: relative;
     padding-left: 6px;
-    list-style-position: inside;
+    /*list-style-position: inside;*/
     border-radius: 5px;
     width: initial;
     margin-bottom: 8px;

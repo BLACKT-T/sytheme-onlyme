@@ -75,20 +75,22 @@
     --MyOnly-code-line-number-color: -#000000;
     --MyOnly-code-line-color: -#c7c7c7;
     --MyOnly-tab-bar-theme-color: -rgba(255,156,0,1);
-    --MyOnly-setting-theme-color: -rgba(255,156,0,1)
+    --MyOnly-setting-theme-color: -rgba(255,156,0,1);
+    --MyOnly-table-lineou-color: -rgba(220,220,220,.5)
 }
 .language-graphviz polygon {
     fill: transparent
 }
 .b3-list--background .b3-list-item--focus {
     background-color: var(--MyOnly-setting-theme-color) !important;
-    color: #000000
+    color: #000000;
+    width: initial
 }
 li.item.item--focus {
     border: none;
     background-color: var(--MyOnly-tab-bar-theme-color);
     border-top: solid 2px transparent;
-    border-right: solid 2px transparent;
+    border-right: solid 2px transparent
 }
 .layout-tab-bar .item {
     outline: none;
@@ -96,7 +98,9 @@ li.item.item--focus {
     box-shadow: none;
     border-top: solid 2px var(--MyOnly-tab-bar-theme-color);
     border-right: solid 2px var(--MyOnly-tab-bar-theme-color);
-    border-top-right-radius: 5px !important
+    border-top-right-radius: 5px !important;
+    border-radius: 10px 3px;
+    margin-right: 0.5px
 }
 .layout-tab-bar .item--focus {
     border: none;
@@ -150,7 +154,8 @@ ul > li:not(.task-list-item):focus {
 }
 ul > li:not(.task-list-item):hover {
     border: none;
-    box-shadow: none
+    box-shadow: none;
+    background-color: rgba(255, 165, 0, .45)
 }
 ul > li:not(.task-list-item):active {
     border: none;
@@ -247,5 +252,67 @@ code::before {
     border: none;
     background-color: var(--MyOnly-tab-bar-theme-color);
     border-top: solid 2px transparent;
-    border-right: solid 2px transparent
+    border-right: solid 2px transparent;
+    outline: none;
+    box-shadow: none
+}
+.b3-dialog__close {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: -40px;
+    background-color: var(--MyOnly-setting-theme-color);
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 0
+}
+.toolbar__item:hover svg {
+    transform: scale(1.5);
+    z-index: 333
+}
+.vditor-reset ol {
+    margin-left: 1em;
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-left: solid 1.5px rgba(0,0,0,.5)
+}
+.vditor-reset ol  li:hover {
+    background-color: rgba(255, 165, 0, .45)
+}
+.vditor-reset ul {
+    margin-left: 1em;
+    padding-left: 1em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-left: solid 1.5px rgba(0,0,0,.5)
+}
+.vditor-reset table tbody tr:nth-child(2n) {
+    background-color: var(--MyOnly-table-lineou-color)
+}
+.b3-list-item.b3-list-item--big.b3-list-item--focus {
+    padding: 16px 24px
+}
+.b3-list-item.b3-list-item--big {
+    padding: 8px;
+    padding-left: 24px
+}
+.layout-tab-bar .item:hover:not(.item--focus) {
+    background-color: var(--b3-tab-background-hover);
+    border-top: solid 2px var(--MyOnly-tab-bar-theme-color);
+    border-right: solid 2px var(--MyOnly-tab-bar-theme-color)
+}
+.b3-list.b3-list--background {
+    margin-left: 0
+}
+.b3-list-item.b3-list-item--hide-action {
+
+}
+.b3-list-item.b3-list-item--hide-action.b3-list-item--hide-tip {
+
 }
